@@ -43,8 +43,8 @@
           <input type="email" name="correo" placeholder="Correo Electrónico" class="input">
 
           <select name="extranjero" class="input">
-            <option value="no">Mexicano</option>
-            <option value="si">Extranjero</option>
+            <option value="0">Mexicano</option>
+            <option value="1">Extranjero</option>
           </select>
 
           <!-- Condicionales -->
