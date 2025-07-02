@@ -47,4 +47,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function datoEstudiante()
+    {
+        return $this->hasOne(\App\Models\DatoEstudiante::class);
+    }
+
 }

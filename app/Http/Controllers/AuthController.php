@@ -34,6 +34,10 @@ class AuthController extends Controller
         $user->assignRole($request->rol);
         Auth::login($user);
 
+        if ($request->rol === 'estudiante') {
+            return redirect()->route('form.estudiante');
+        }
+
         return redirect('/dashboard');
     }
 

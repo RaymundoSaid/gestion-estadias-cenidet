@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DatoEstudianteController;
 
 
 Route::get('/', function () {
@@ -19,3 +20,5 @@ Route::get('/register', [AuthController::class, 'registerForm']);
 Route::post('/register', [AuthController::class, 'register']);
 Route::get('/dashboard', [AuthController::class, 'dashboard'])->middleware('auth');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('/estudiante/datos', [DatoEstudianteController::class, 'store'])->middleware('auth');
+Route::get('/estudiante/formulario', [DatoEstudianteController::class, 'formulario'])->middleware(['auth'])->name('form.estudiante');
