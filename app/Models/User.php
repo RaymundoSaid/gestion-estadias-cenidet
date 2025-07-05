@@ -53,4 +53,9 @@ class User extends Authenticatable
         return $this->hasOne(\App\Models\DatoEstudiante::class);
     }
 
+    public function datoProfesor() {
+        return $this->hasOne(DatoProfesor::class);
+    }
+
+
 }

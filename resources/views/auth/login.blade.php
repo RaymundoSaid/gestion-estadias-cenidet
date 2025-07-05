@@ -21,8 +21,7 @@
       <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-lg hover:bg-blue-800">Ingresar</button>
     </form>
     <p class="text-sm text-center text-gray-600 mt-4">¿No tienes cuenta? <a href="/register" class="text-blue-600 hover:underline">Regístrate aquí</a></p>
-    <p class="text-sm text-center text-gray-600 mt-4">Volver <a href="/welcome" class="text-blue-600 hover:underline">Regístrate aquí</a></p>
-
+    <p class="text-sm text-center text-gray-600 mt-4">Volver <a href="/" class="text-blue-600 hover:underline">volver a pantalla principal</a></p>
   </div>
 </body>
 </html>

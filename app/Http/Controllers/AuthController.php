@@ -38,6 +38,11 @@ class AuthController extends Controller
             return redirect()->route('form.estudiante');
         }
 
+        if ($request->rol === 'profesor') {
+            return redirect()->route('form.profesor');
+        }
+
+
         return redirect('/dashboard');
     }
 
@@ -60,4 +65,6 @@ class AuthController extends Controller
         Auth::logout();
         return redirect('/login');
     }
+
+    
 }
