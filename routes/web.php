@@ -19,3 +19,4 @@ Route::get('/register', [AuthController::class, 'registerForm']);
 Route::post('/register', [AuthController::class, 'register']);
 Route::get('/dashboard', [AuthController::class, 'dashboard'])->middleware('auth');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('home', [AuthController::class, 'home'])->name('home');
